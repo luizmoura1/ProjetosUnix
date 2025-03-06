@@ -1,0 +1,18 @@
+luiz@luiz-H55H-CM:~$ cd ~
+luiz@luiz-H55H-CM:~$ ls
+ antlr-2.7.5         Documentos   Downloads   Modelos   Público   Vídeos
+'Área de trabalho'   Documents    Imagens     Músicas   snap
+luiz@luiz-H55H-CM:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+luiz@luiz-H55H-CM:~$ mkdir -p ~/bin/
+luiz@luiz-H55H-CM:~$ ls
+ antlr-2.7.5         bin          Documents   Imagens   Músicas   snap
+'Área de trabalho'   Documentos   Downloads   Modelos   Público   Vídeos
+luiz@luiz-H55H-CM:~$ export PATH="$HOME/bin:$PATH"
+luiz@luiz-H55H-CM:~$ echo $PATH
+/home/luiz/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+luiz@luiz-H55H-CM:~$ source ~/.bashrc
+luiz@luiz-H55H-CM:~$ chmod +x ~/Documentos/atualizar.sh
+luiz@luiz-H55H-CM:~$ mv ~/Documentos/atualizar.sh ~/bin/
+luiz@luiz-H55H-CM:~$ atualizar.sh
+

@@ -1,0 +1,10 @@
+all: leitura
+
+leitura: leitura.o
+	ld -m elf_i386 -s leitura.o -o leitura
+
+leitura.o: leitura.asm
+	nasm -f elf32 leitura.asm -o leitura.o
+
+clean:
+	rm -f leitura.o leitura

@@ -1,0 +1,65 @@
+
+
+
+!eq
+eq && eq
+eq || eq
+eq && ge
+eq || ge
+eq && gt
+eq || gt
+eq && le
+eq || le
+eq && lt
+eq || lt
+eq && ne
+eq || ne
+!ge
+ge && eq
+ge || eq
+ge && ge
+ge || ge
+ge && le
+ge || le
+ge && ne
+ge || ne
+!gt
+gt && eq
+gt || eq
+gt && gt
+gt || gt
+gt && lt
+gt || lt
+gt && ne
+gt || ne
+!le
+le && eq
+le || eq
+le && ge
+le || ge
+le && le
+le || le
+le && ne
+le || ne
+!lt
+lt && eq
+lt || eq
+lt && gt
+lt || gt
+lt && lt
+lt || lt
+lt && ne
+lt || ne
+!ne
+ne && eq
+ne || eq
+ne && ge
+ne || ge
+ne && gt
+ne || gt
+ne && le
+ne || le
+ne && lt
+ne || lt
+ne && ne
+ne || ne

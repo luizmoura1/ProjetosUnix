@@ -1,0 +1,13 @@
+http://www.freeos.com/guides/lsst/ch02sec01.html
+
+https://www.learnshell.org/en/Hello,_World!
+
+https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/
+
+https://www.geeksforgeeks.org/how-to-create-a-shell-script-in-linux/?ref=next_article
+
+https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/#heading-comments-in-bash-scripting
+
+https://www.tutorialspoint.com/unix/shell_scripting.htm
+
+https://www.shellscript.sh/first.html
