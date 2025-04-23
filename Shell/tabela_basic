@@ -1,0 +1,56 @@
+DIM id AS STRING, nome AS STRING, sexo AS STRING, nota AS STRING, arquivo AS STRING
+
+SUB abrir_arquivo
+    INPUT "Nome do arquivo (Enter para padrão): ", arquivo
+    IF arquivo = "" THEN
+        arquivo = "registros.txt"
+    END IF
+END SUB
+
+SUB escrever
+    PRINT "---------------------"
+    INPUT "Informe Id: ", id
+    INPUT "Informe Nome: ", nome
+    INPUT "Informe Sexo: ", sexo
+    INPUT "Informe Nota: ", nota
+    PRINT "---------------------"
+    OPEN arquivo FOR APPEND AS #1
+    PRINT #1, id; " "; nome; " "; sexo; " "; nota
+    CLOSE #1
+END SUB
+
+SUB ler
+    PRINT "---------------------"
+    OPEN arquivo FOR INPUT AS #1
+    WHILE NOT EOF(1)
+        LINE INPUT #1, linha$
+        PRINT linha$
+    WEND
+    CLOSE #1
+    PRINT "---------------------"
+    INPUT "Pressione Enter para continuar..."
+END SUB
+
+CALL abrir_arquivo
+
+DO
+    CLS
+    PRINT "------ M E N U ------"
+    PRINT "1 - Inserir registro"
+    PRINT "2 - Exibir registro"
+    PRINT "3 - Novo arquivo"
+    PRINT "Qualquer outra tecla para sair"
+    INPUT "Opção: ", numero$
+
+    SELECT CASE numero$
+        CASE "1"
+            CALL escrever
+        CASE "2"
+            CALL ler
+        CASE "3"
+            CALL abrir_arquivo
+        CASE ELSE
+            PRINT "FIM"
+            EXIT DO
+    END SELECT
+LOOP

@@ -1,0 +1,19 @@
+| shell script	| BASIC 		|
+| (){}		| SUB..END SUB 		|
+| read		| INPUT 		|
+| [[]]		| IF THEN ELSE END IF	|
+| echo		| PRINT			|
+| while do..done| DO..LOOP		|
+		| WHILE..WEND		|
+| clear		| CLS			|
+| case		| SELECT CASE		|
+| break		| EXIT			|
+| >>		| OPEN FOR AS #		|
+| cat		| 			|
+|		| PRINT #		|
+|		| LINE INPUT #		|
+| 		| CLOSE #		|
+| 		| DIM			|
+| nome_da_função| (CALL) nome_da_função	|
+| shebang	| 			|
+
